@@ -2,8 +2,7 @@
 * Wrapper around the legacy CM5 Solidity language mode
 * See: https://github.com/alincode/codemirror-solidity
 */
-import { StreamLanguage, StreamParser, StringStream } from '@codemirror/stream-parser';
-import { LanguageSupport } from '@codemirror/language';
+import { LanguageSupport, StreamLanguage, StreamParser, StringStream } from '@codemirror/language';
 
 const keywords = {
   pragma: true,
