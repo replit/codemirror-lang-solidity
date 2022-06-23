@@ -10,7 +10,7 @@ A CodeMirror extension that provides Solidity syntax highlighting and language s
 ### Usage
 
 ```ts
-import { basicSetup } from '@codemirror/basic-setup';
+import { basicSetup } from 'codemirror';
 import { EditorView } from '@codemirror/view';
 import { EditorState } from '@codemirror/state';
 import { solidity } from '@replit/codemirror-lang-solidity';
