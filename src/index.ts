@@ -347,7 +347,10 @@ function tokenBase(stream: StringStream, state: State) {
       keywordsMoreBlockAndTransactionProperties,
       cur,
     ) ||
-    (cur in keywordsBlockAndTransactionProperties &&
+    (Object.prototype.propertyIsEnumerable.call(
+      keywordsBlockAndTransactionProperties,
+      cur,
+    ) &&
       ((keywordsBlockAndTransactionProperties as any)[cur] as Array<
         string
       >).some(function (item) {
