@@ -3,6 +3,7 @@
 * See: https://github.com/alincode/codemirror-solidity
 */
 import { LanguageSupport, StreamLanguage, StreamParser, StringStream } from '@codemirror/language';
+import { Tag } from '@lezer/highlight';
 
 const keywords = {
   pragma: true,
@@ -752,6 +753,18 @@ export const parser: StreamParser<State> = {
   blockCommentStart: '/*',
   blockCommentEnd: '*/',
   lineComment: '//',
+  tokenTable: {
+    functionName: Tag.define(),
+    parameterValue: Tag.define(),
+    addressFunction: Tag.define(),
+    errorHandling: Tag.define(),
+    contractRelated: Tag.define(),
+    version: Tag.define(),
+    etherUnit: Tag.define(),
+    doc: Tag.define(),
+    mathematicalAndCryptographic: Tag.define(),
+    abi: Tag.define(),
+  }
 };
 
 export const solidity = new LanguageSupport(StreamLanguage.define(parser));

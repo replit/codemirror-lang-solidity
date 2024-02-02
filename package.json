@@ -26,16 +26,19 @@
     "@codemirror/language": "^6.0.0"
   },
   "devDependencies": {
-    "codemirror": "^6.0.0",
     "@codemirror/buildhelper": "^0.1.16",
     "@codemirror/commands": "^6.0.0",
     "@codemirror/language": "^6.0.0",
     "@codemirror/state": "^6.0.0",
     "@codemirror/view": "^6.00.0",
+    "codemirror": "^6.0.0",
     "vite": "^2.3.8"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/replit/codemirror-lang-solidity.git"
+  },
+  "dependencies": {
+    "@lezer/highlight": "^1.2.0"
   }
 }
